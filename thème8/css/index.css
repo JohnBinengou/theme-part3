@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700,700i');
+
+body{margin : 0px ; padding: 0px;}
+#logo
+{
+    width: 120px;
+    height: 120px;
+    border : 1px #000 solid ;
+}
+header { width: 100%; }
+
+
+
+
+/*   -------------------------------  HEADER ----------------------------------------------------------------------- */
+
+.menu
+{
+    background: #333; 
+    width: 100%;
+    height: 66px;
+    line-height: 66px; /*Interligne pour placer  le menu au centre*/
+    letter-spacing: 1px; /*Les espacement entre les lettres*/
+    transition: 0.3s ease-in-out;
+}
+
+.menu:hover
+{
+    box-shadow: 00px 06px 20px #9e9e9e;
+    background: #F9A100;
+}
+.m-left{
+    float: left; /* Placer le logo a gauche*/
+}
+
+.logo
+{
+    margin: 0; padding: 0; /*Supprimer les marges*/
+}
+
+.m-right
+{
+    float: right; /*Placer les texte du menu a droite*/
+}
+
+.m-link
+{
+    text-decoration: none; /* Supprimer les decorations des liens dans le menu*/
+    color: palevioletred; 
+    text-transform: capitalize; /* Transformer le texte en majuscule*/
+    font-weight: 900; /*Augmenter la taille des ecritures dans le menu*/ 
+    padding: 0; margin: 0 10px; /* Pour espacer les liens*/
+    transition: all 0.3s ease-in-out; /*Une transition de bordure des liens du menu au survole de la souris*/
+    border-bottom: 02px solid transparent; /*Definition de la marge au survole de sourir*/
+}
+
+.m-link:hover
+{
+    text-decoration: none;
+    color:aliceblue;
+    border-color: #FFFFFF;
+    padding-bottom: 03px; /*L'espacement des interlinge entre la transition et le texte*/
+}
+.m-link i
+{
+    margin-right: 3px;
+}
+
+/* --------------------------------------  CATALOGUE ---------------------------------------------------------------*/
+
+.box
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.card
+{
+    margin-top: 80px;
+    height: 300px;
+    transition: 0.5s;
+}
+.card:hover
+{
+    border: 1px solid red;
+    border-radius: 30px;
+}
+.card .cardImg
+{
+    height: 150px;
+    width: 90%;
+    position: relative;
+    top: -15px;
+    left: 5%;
+}
+.card .cardImg img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.card .info
+{
+    text-align: center;
+}
+.card .info h3
+{
+    color: rgb(70, 66, 66);
+}
+.card .info p
+{
+    color: rgb(41, 201, 49);
+}
+
+.ligne
+{
+    display: flex;
+}
+
+
+
+/* ---------------------------------------- FOOTER ------------------------------------------------------- */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    margin-top : 30px ;
+    background: #44aa09 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #333;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#000;
+}
+#footer a {
+    color: #000;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#000;
+}
+#footer ul.social li a:hover{
+	color:#333;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}

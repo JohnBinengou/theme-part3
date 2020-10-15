@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Panier</title>
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{background-color: rgb(255, 254, 246);}
+    </style>
+
+</head>
+<body>
+    <div class="container" id="entete-logo"> 
+        <a href="panier.html"> <button style="float: right;"><i style="color: rgb(199, 126, 126) ; font-size: 24px; float: right;" class="fa fa-shopping-cart">1</i> </button>  </a>
+        <div id="logo"> </div>  
+    </div>
+
+	<!--------------------------- ----------------------  HEADER ------------------------------ -----------------------------------     -->
+
+    <header role="header">
+        <!--Menu de  naaivgatin-->
+        <nav class="menu" role="navigation">
+            <div class="inner">
+                
+                
+                <!--Menu responsible-->
+                <div class="m-right">
+                    <a href="index.html" class="m-link"><i class="fa fa-home" aria-hidden="true"></i>Acceuil</a>
+                    <a href="catalogue.html" class="m-link"><i class="fa fa-suitcase" aria-hidden="true"></i>Catalogue</a>
+                    <a href="contacts.html" class="m-link"><i class="fa fa-envelope"></i>Contacts</a>
+                </div>
+                <!--Fin Menu responsible-->
+            </div>
+        </nav>
+    </header>
+    <!-- Fin de la ligne !-->
+
+    <!------------------------ PANIER ------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-10 " style="margin-left: auto ; margin-right: auto;"> 
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Quantité</th>
+                            <th class="text-center">Prix</th>
+                            <th class="text-center">Total</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sm-8 col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading" style="margin: 10px; "><a href="#">Product name</a></h4>
+                                    <h5 class="media-heading" style="margin: 10px; "> by <a href="#">Brand name</a></h5>
+                                    <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                                </div>
+                            </div></td>
+                            <td class="col-sm-1 col-md-1" style="text-align: center ;">
+                              3
+                            </td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                            <td class="col-sm-1 col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> <h3 title="supprimer">x</h3>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading" style="margin: 10px;"><a href="#">Product name</a></h4>
+                                    <h5 class="media-heading" style="margin: 10px; "> by <a href="#">Brand name</a></h5>
+                                    <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                                </div>
+                            </div></td>
+                            <td class="col-md-1" style="text-align: center"> 2
+                            </td>
+                            <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                            <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                            <td class="col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> <h3 title="supprimer">x</h3>
+                            </button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td><h3>Total</h3></td>
+                            <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>
+                            <a href="index.html"> <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Continuer les achats
+                            </button> </a>  </td>
+                            <td>
+                            <button type="button" class="btn btn-success">
+                                Passer à la caisse <span class="glyphicon glyphicon-play"></span>
+                            </button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------- Footer -------------------------------------------------------------------->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Liens</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Liens</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Liens</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+
+
+	<script src="bootstrap-4.4.1/js/jquery.min.js" ></script>
+    <script src="bootstrap-4.4.1/js/popper.min.js" ></script>
+    <script src="bootstrap-4.4.1/js/bootstrap.min.js" ></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
